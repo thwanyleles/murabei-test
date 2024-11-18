@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Book } from '@/models/Book';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api/v1';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 // Função para buscar livros
 export const fetchBooks = async (page: number = 1): Promise<{ data: Book[]; total: number }> => {
