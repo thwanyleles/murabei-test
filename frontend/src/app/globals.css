@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --foreground: 34, 34, 34;
+  --card-bg: 240, 240, 240;
+}
+
+.dark {
+  --background: 34, 34, 34;
+  --foreground: 255, 255, 255;
+  --card-bg: 60, 60, 60;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus {
+  border-color: rgba(var(--foreground), 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--foreground), 0.1);
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
